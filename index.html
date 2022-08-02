@@ -1,0 +1,52 @@
+<!DOCTYPE HTML> 
+<html> 
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Random Password Generator</title>
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div id="main-interface">
+           
+            <h1>Generate a <br><span class="highlight">random password</span></h1>
+            
+            <h2>Take all of the thinking out of creating a new password! </h2>
+            
+            <button onclick="generatePasswords()"><span class="button-text">Generate passwords</span></button>   
+            <hr>
+            <div id="password-fields-container">
+                <div class="password-field">
+                    <p id="password-1-render" class="password-text"></p>
+                </div>
+                <div class="password-field">
+                    <p id="password-2-render" class="password-text"></p>
+                </div>
+                <button class="copy-button" id="copy-button-1" onclick="copyPassword1()">Copy this password</button>
+                <button class="copy-button" id="copy-button-2" onclick="copyPassword2()">Copy this password</button>
+            </div>
+
+        
+            <fieldset> 
+                <legend>Password Length</legend>
+                <div id="password-length-container"> 
+                    <input id="password-length-selector" type="number" placeholder="15"></input>
+                    <button id="password-length-button" onclick="setPasswordLength()"> Set Length </button> 
+                </div>
+            </fieldset>
+        
+        
+        
+        
+        
+        
+        </div>
+        <script src="./script.js"></script>    
+    </body>
+
+</html>
+
+
+
