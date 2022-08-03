@@ -13,7 +13,7 @@
            
             <h1>Generate a <br><span class="highlight">random password</span></h1>
             
-            <h2>Take all of the thinking out of creating a new password! </h2>
+            <h2>Create a password that is so random, not even <b><i>you</i></b> can remember it!</h2>
             
             <button onclick="generatePasswords()"><span class="button-text">Generate passwords</span></button>   
             <hr>
@@ -28,20 +28,15 @@
                 <button class="copy-button" id="copy-button-2" onclick="copyPassword2()">Copy this password</button>
             </div>
 
-        
             <fieldset> 
-                <legend>Password Length</legend>
-                <div id="password-length-container"> 
-                    <input id="password-length-selector" type="number" placeholder="15"></input>
-                    <button id="password-length-button" onclick="setPasswordLength()"> Set Length </button> 
+                <legend>Customize Password</legend>
+                <div id="customize-password-container"> 
+                    <label><input id="password-length-selector" type="number" oninput="setPasswordLength()" value="15">Password length</label>
+                    <label><input type="checkbox" id="include-numbers-checkbox">Include numbers</label>
+                    <label><input type="checkbox" id="include-special-characters-checkbox">Include special characters </label>
                 </div>
+             
             </fieldset>
-        
-        
-        
-        
-        
-        
         </div>
         <script src="./script.js"></script>    
     </body>
